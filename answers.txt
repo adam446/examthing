@@ -1,0 +1,232 @@
+Zone de réponse 1.2 :
+
+<!DOCTYPE html> :
+Indique la langue du program est la langue standard de HTML5
+
+<html> :
+racine due document
+
+<head> :
+titre de la page sur l'onglet
+
+<body> :
+contenue de la page
+
+Zone de réponse 2.1 :
+
+Balise HTML :
+utilisé pour structurer et organiser le contenu dans une page web <>
+
+Attribut HTML :
+fournir des informations supplémentaires à une balise HTML id, class
+
+Zone de réponse 2.2 :
+
+Exemple de balise :
+<span id="authLoggedIn" class="auth-group" style="display:none;">
+
+Rôle du 1er attribut :
+id pour donner id qui peux etre referer dans css ou js
+
+Rôle du 2e attribut :
+class peux etre utilizer pour css ou Tailwind
+
+<div> :
+- Rôle :
+Boîte utilisée pour regrouper des éléments dans la page.
+- Exemple d'utilisation :
+................................................................................
+
+<header> :
+- Rôle :
+Représente l’en-tête d’une page ou d’une section
+- Exemple d'utilisation :
+<header><h1>Titre</h1></header>
+
+<nav> :
+- Rôle :
+Contient les liens de navigation du site
+- Exemple d'utilisation :
+<li><a href="html/about.html" data-i18n="nav.about"></a></li>
+
+<section> :
+- Rôle :
+Diviser la page en section
+- Exemple d'utilisation :
+<section><h2>Nos services</h2></section>
+
+<article> :
+- Rôle :
+Pour metre un article
+- Exemple d'utilisation :
+<article>Un article de blog</article>
+
+Zone de réponse 4 :
+
+Sélecteur de type :
+- Explication :
+ca selecte tout une balise comme <body> et donne un style
+- Exemple de règle :
+body {
+  font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #eef2ff 0%, #f8fafc 50%, #f1f5f9 100%);
+  color: var(--color-primary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+Sélecteur de classe :
+- Explication :
+ca selecte une classe et donne un style
+- Exemple de règle :
+.auth-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+Sélecteur d'identifiant :
+- Explication :
+ca selecte un ID et donne un style
+- Exemple de règle :
+#connected {
+  max-width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+Zone de réponse 5.1 :
+
+1.
+Content : zone où se trouve le contenu
+2.
+Padding : espace autour du contenu, à l’intérieur de la boîte
+3.
+Border : bordure qui entoure le padding et le contenu.
+4.
+Margin : espace extérieur qui sépare la boîte des autres éléments.
+
+Zone de réponse 5.2 :
+
+Différence block / inline :
+
+Block : va à la ligne et prend toute la largeur.
+Inline : reste dans la ligne et prend juste sa place.
+
+Exemples d'éléments block :
+1) <div>
+2) <p>
+
+Exemples d'éléments inline :
+1) <span>
+2) <a>
+
+Zone de réponse 6.1 :
+
+Liste des balises sémantiques et rôle :
+<h1> : titre principal de la page, indique le sujet le plus important.
+<p> : paragraphe, sert à afficher un bloc de texte.
+<h2> : sous-titre, indique une section secondaire du contenu.
+<footer> : zone de bas de page, contient les informations de fin comme les contacts.
+
+Zone de réponse 6.2 :
+Dans:
+<div class="bloc">
+  <h2>Projet 1</h2>
+  <p>Application web en JavaScript.</p>
+</div>
+
+<div class="bloc important">
+  <h2>Projet 2</h2>
+  <p>Site vitrine responsive.</p>
+</div>
+CSS:
+.bloc {
+  background-color: lightgrey;
+}
+
+.important {
+  border: 2px solid red;
+}
+class="bloc important" et class="bloc" sont la pour que la premiere partie block peut avoir un css characteritic en commun et "important" peux
+avoir un design de plus. C'est pour eviter les repitition comme
+<div class="bloc">
+  <h2>Projet 1</h2>
+  <p>Application web en JavaScript.</p>
+</div>
+
+<div class="important">
+  <h2>Projet 2</h2>
+  <p>Site vitrine responsive.</p>
+</div>
+CSS:
+
+.bloc {
+  background-color: lightgrey;
+}
+
+.important {
+  border: 2px solid red;
+  background-color: lightgrey;
+}
+car dans un code plus long ca peut etre plus compliquer
+
+Zone de réponse 6.3 :
+
+Proposition :
+
+<article class="bloc">
+  <h2>Projet 1</h2>
+  <p>Application web en JavaScript.</p>
+</article>
+
+<article class="bloc important">
+  <h2>Projet 2</h2>
+  <p>Site vitrine responsive.</p>
+</article>
+
+Justification :
+
+<article> est plus approprié que <div> car chaque projet est un contenu autonome, qui pourrait exister seul (comme une fiche de projet).
+Cela rend la structure plus sémantique, plus claire, et améliore l’accessibilité ainsi que le référencement.
+
+Zone de réponse 6.4 :
+
+<!-- Ajoutez ici la balise manquante dans le <head> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Zone de réponse 7.1 :
+
+h1.titre :
+Sélecteur qui cible uniquement les balises <h1> ayant la classe titre.
+
+.bloc.important :
+Sélecteur qui cible tout élément qui possède les deux classes bloc et important en même temps.
+
+Zone de réponse 7.2 :
+
+une bordure de 1 px, de couleur #333
+un arrière-plan de couleur #f5f5f5
+un padding de 15 px à l’intérieur
+une marge extérieure de 10 px autour de l’élément
+et il hérite aussi du style de .bloc, avec certains éléments modifiés par .important.
+
+Zone de réponse 7.3 :
+
+l’id="intro" = texte rouge.
+
+Zone de réponse 7.4 :
+/* Votre règle CSS pour <footer> */
+footer {
+  text-align: center;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+Responsive design is how you make web pages that look good on every screen size — the layout, text size,
+and images change to display nicely on any device, whether it’s a desktop, phone or tablet.
+That’s critical considering a very large percentage of all internet traffic is generated through mobile.
+It’s a reasonably good experience; it’s much simpler to read, easier to use, and much better for search engine optimization.
