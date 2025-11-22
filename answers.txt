@@ -226,7 +226,53 @@ footer {
   background-color: #ffffff;
 }
 
+Zone de réponse 9.1 :
+
 Responsive design is how you make web pages that look good on every screen size — the layout, text size,
 and images change to display nicely on any device, whether it’s a desktop, phone or tablet.
 That’s critical considering a very large percentage of all internet traffic is generated through mobile.
 It’s a reasonably good experience; it’s much simpler to read, easier to use, and much better for search engine optimization.
+
+Zone de réponse 9.3 :
+
+Technique 1 :
+Utilizer Tailwind
+Technique 2 :
+Utilizer IA
+
+Zone de réponse 10.1 :
+
+URL du dépôt GitHub :
+https://github.com/adam446/examthing.git
+
+Zone de réponse 10.2 :
+
+URL du site sur Vercel :
+https://examthing-sigma.vercel.app
+
+Zone de réponse 10.3 :
+
+Commandes Git principales :
+git init //setup git
+git add . //adds everything modified
+git commit -m "version" // save version name
+git push // launch version
+git status // verifie si il ya des modif non ajouter
+
+Étapes de connexion GitHub → Vercel :
+git init           // initialise le dépôt
+git add .          // ajoute les fichiers
+git commit -m "init"   // premier commit
+git branch -M main     // met la branche par défaut sur main
+git remote add origin https://github.com/votreNom/votreRepo.git   // relie à GitHub
+git push -u origin main   // envoie sur GitHub
+
+
+Modification effectuée avant le 2e push :
+git add . //adds everything modified
+git commit -m "version" // save version name
+git push // launch version
+
+Vérification de la mise à jour sur Vercel :
+Vas sur vercel puis 
+Source <version> ecris sur page
